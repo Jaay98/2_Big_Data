@@ -14,7 +14,7 @@ Jose Christian Romero Hernandez
 
 Alumno: 
 17210526 Alvarez Yanez Jose Alonso
-
+17210623 Quiroz Montes Yim Yetzhael
 
 Fecha:
 23/10/2020 </h6>
