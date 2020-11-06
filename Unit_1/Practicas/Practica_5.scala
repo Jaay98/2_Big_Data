@@ -1,6 +1,6 @@
 //Practice 5
-//Author Alvarez Yanez Jose Alonso
-//17210526
+//Author Alvarez Yanez Jose Alonso,Quiroz Montes Yim Yetzhael
+//17210526,17210623
 
 
 <<<<<<< Updated upstream
