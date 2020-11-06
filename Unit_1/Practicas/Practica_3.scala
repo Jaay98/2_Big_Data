@@ -1,6 +1,6 @@
 //Practice 3
-//Author Alvarez Yanez Jose Alonso
-//17210526
+//Author Alvarez Yanez Jose Alonso,Quiroz Montes Yim Yetzhael
+//17210526,17210623
 
 // Practice 3, analyse the following code with your own words
 
