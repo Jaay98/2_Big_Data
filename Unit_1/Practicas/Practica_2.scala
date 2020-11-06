@@ -1,6 +1,6 @@
 //Practice 2 
-//Author Alvarez Yanez Jose Alonso
-//17210526
+//Author Alvarez Yanez Jose Alonso,Quiroz Montes Yim Yetzhael
+//17210526,17210623
 
 // 1. Crea una lista llamada "lista" con los elementos "rojo", "blanco", "negro"
 
