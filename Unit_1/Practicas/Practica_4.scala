@@ -1,6 +1,6 @@
 //Practice 4 
-//Author Alvarez Yanez Jose Alonso
-//17210526
+//Author Alvarez Yanez Jose Alonso,Quiroz Montes Yim Yetzhael
+//17210526,17210623
 
 //Make a code who runs a Fibbonacci Series
 
