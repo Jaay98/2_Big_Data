@@ -1,5 +1,9 @@
 /*
+
 Practice 1
+
+Practice 6
+>>>>>>> bcf536c7afe4b416ba5bc4ac66f182257ca568fd
 
 Authors:
 -Alvarez Yanez Jose Aloso 
@@ -8,6 +12,7 @@ Authors:
 -Big Data
 
 */
+
 // 1- Import libraries 
 import org.apache.spark.ml.Pipeline
 import org.apache.spark.ml.classification.{GBTClassificationModel, GBTClassifier}
@@ -52,3 +57,5 @@ println(s"Test Error = ${1.0 - accuracy}")
 val gbtModel = model.stages(2).asInstanceOf[GBTClassificationModel]
 //Print Learned Classification Model
 println(s"Learned classification GBT model:\n ${gbtModel.toDebugString}")
+=======
+>>>>>>> bcf536c7afe4b416ba5bc4ac66f182257ca568fd
