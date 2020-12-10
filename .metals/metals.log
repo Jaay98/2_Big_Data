@@ -1,0 +1,30 @@
+2020.12.09 20:34:06 INFO  Started: Metals version 0.9.7 in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data' for client vscode.
+2020.12.09 20:34:07 INFO  time: initialize in 0.68s
+2020.12.09 20:34:08 WARN  Build server is not auto-connectable.
+2020.12.09 20:34:08 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.09 20:34:08 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Practice_1.scala
+2020.12.09 20:34:11 INFO  no build target: using presentation compiler with only scala-library
+2020.12.09 20:37:18 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Dec 09, 2020 8:37:18 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Dec 09, 2020 8:37:18 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: no context found for source-file:///C:/Users/alons/OneDrive/Escritorio/Universidad/Datos%20Masivos/2_Big_Data/Unit_2/Practice_1.scala,line-39,offset=1149
+scala.reflect.internal.FatalError: no context found for source-file:///C:/Users/alons/OneDrive/Escritorio/Universidad/Datos%20Masivos/2_Big_Data/Unit_2/Practice_1.scala,line-39,offset=1149
+	at scala.tools.nsc.interactive.CompilerControl.$anonfun$doLocateContext$1(CompilerControl.scala:100)
+	at scala.tools.nsc.interactive.CompilerControl.doLocateContext(CompilerControl.scala:100)
+	at scala.tools.nsc.interactive.CompilerControl.doLocateContext$(CompilerControl.scala:99)
+	at scala.tools.nsc.interactive.Global.doLocateContext(Global.scala:113)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitionTypedTreeAt(PcDefinitionProvider.scala:102)
+	at scala.meta.internal.pc.PcDefinitionProvider.definition(PcDefinitionProvider.scala:24)
+
+2020.12.09 20:37:37 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Practice_1.scala
+2020.12.09 20:39:23 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.09 20:39:23 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.09 20:39:43 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.09 20:39:43 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.09 20:39:43 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Dec 09, 2020 8:40:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 715
+2020.12.09 20:42:00 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.09 20:42:00 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Practice_1.scala
+2020.12.09 20:42:33 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Practice_1.scala
