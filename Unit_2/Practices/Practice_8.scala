@@ -2,8 +2,8 @@
 Practice 8
 
 Authors:
--Alvarez Yanez Jose Aloso 
--Quiroz Montes Yim Yetzahel
+-Alvarez Yanez Jose Alonso 
+-Quiroz Montes Yim Yetzhael
 
 -Big Data
 

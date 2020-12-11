@@ -2,9 +2,8 @@
 Practice 9
 
 Authors:
--Alvarez Yanez Jose Aloso 
--Quiroz Montes Yim Yetzahel
-
+-Alvarez Yanez Jose Alonso 
+-Quiroz Montes Yim Yetzhael
 -Big Data
 
 */
@@ -33,9 +32,9 @@ val predictions = ovrModel.transform(test)
 val evaluator = new MulticlassClassificationEvaluator()
 .setMetricName("accuracy")
 val accuracy = evaluator.evaluate(predictions)
-<<<<<<< HEAD
+
 println(s"Test Error = ${1 - accuracy}")}
-=======
+
 println(s"Test Error = ${1 - accuracy}")
 }
->>>>>>> c53c5dd9299e4d21f607a1e9e381566bf6eeaaed
+

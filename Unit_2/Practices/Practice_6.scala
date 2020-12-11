@@ -1,13 +1,9 @@
 /*
 Practice 6
-<<<<<<< HEAD
-
-=======
->>>>>>> c53c5dd9299e4d21f607a1e9e381566bf6eeaaed
 
 Authors:
--Alvarez Yanez Jose Aloso 
--Quiroz Montes Yim Yetzahel
+-Alvarez Yanez Jose Alonso 
+-Quiroz Montes Yim Yetzhael
 
 -Big Data
 
@@ -61,7 +57,3 @@ val gbtModel = model.stages(2).asInstanceOf[GBTClassificationModel]
 
 // 14- Print Learned Classification Model
 println(s"Learned classification GBT model:\n ${gbtModel.toDebugString}")
-<<<<<<< HEAD
-
-=======
->>>>>>> c53c5dd9299e4d21f607a1e9e381566bf6eeaaed
