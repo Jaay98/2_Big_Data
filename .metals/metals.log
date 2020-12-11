@@ -261,3 +261,22 @@ Caused by: java.nio.file.FileSystemNotFoundException: Provider "git" not install
 	at scala.meta.internal.metals.MetalsLanguageServer.didFocus(MetalsLanguageServer.scala:919)
 	... 16 more
 
+2020.12.10 20:40:17 INFO  shutting down Metals
+2020.12.10 20:41:04 INFO  Started: Metals version 0.9.7 in workspace 'C:\Users\ASUS S510U\OneDrive\Documentos\8vo Semestre\Datos_Masivos\2_Big_Data' for client vscode.
+2020.12.10 20:41:04 INFO  time: initialize in 0.88s
+2020.12.10 20:41:06 WARN  Build server is not auto-connectable.
+2020.12.10 20:41:06 WARN  no build tool detected in workspace 'C:\Users\ASUS S510U\OneDrive\Documentos\8vo Semestre\Datos_Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.10 20:41:06 WARN  no build target for: C:\Users\ASUS S510U\OneDrive\Documentos\8vo Semestre\Datos_Masivos\2_Big_Data\Unit_2\Practice_10.scala
+2020.12.10 20:41:06 WARN  no build target for: C:\Users\ASUS S510U\OneDrive\Documentos\8vo Semestre\Datos_Masivos\2_Big_Data\Unit_2\Practice_1.scala
+2020.12.10 20:41:10 INFO  no build target: using presentation compiler with only scala-library
+2020.12.10 20:41:47 WARN  no build target for: C:\Users\ASUS S510U\OneDrive\Documentos\8vo Semestre\Datos_Masivos\2_Big_Data\Unit_2\Practices\Practice_1.scala
+2020.12.10 20:41:49 WARN  no build target for: C:\Users\ASUS S510U\OneDrive\Documentos\8vo Semestre\Datos_Masivos\2_Big_Data\Unit_2\Practice_1.scala
+2020.12.10 20:41:53 WARN  no build target for: C:\Users\ASUS S510U\OneDrive\Documentos\8vo Semestre\Datos_Masivos\2_Big_Data\Unit_2\Practice_1.scala
+2020.12.10 20:41:54 WARN  no build target for: C:\Users\ASUS S510U\OneDrive\Documentos\8vo Semestre\Datos_Masivos\2_Big_Data\Unit_2\Practice_2.scala
+2020.12.10 20:41:56 WARN  no build target for: C:\Users\ASUS S510U\OneDrive\Documentos\8vo Semestre\Datos_Masivos\2_Big_Data\Unit_2\Practice_2.scala
+2020.12.10 20:41:57 WARN  no build target for: C:\Users\ASUS S510U\OneDrive\Documentos\8vo Semestre\Datos_Masivos\2_Big_Data\Unit_2\Practice_2.scala
+2020.12.10 20:41:58 WARN  no build target for: C:\Users\ASUS S510U\OneDrive\Documentos\8vo Semestre\Datos_Masivos\2_Big_Data\Unit_2\Practice_2.scala
+2020.12.10 20:42:00 WARN  no build target for: C:\Users\ASUS S510U\OneDrive\Documentos\8vo Semestre\Datos_Masivos\2_Big_Data\Unit_2\Practice_3.scala
+2020.12.10 20:42:02 WARN  no build target for: C:\Users\ASUS S510U\OneDrive\Documentos\8vo Semestre\Datos_Masivos\2_Big_Data\Unit_2\Practice_3.scala
+2020.12.10 20:42:03 WARN  no build target for: C:\Users\ASUS S510U\OneDrive\Documentos\8vo Semestre\Datos_Masivos\2_Big_Data\Unit_2\Practice_3.scala
+2020.12.10 20:42:07 WARN  no build target for: C:\Users\ASUS S510U\OneDrive\Documentos\8vo Semestre\Datos_Masivos\2_Big_Data\Unit_2\Practice_10.scala
