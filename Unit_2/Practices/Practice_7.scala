@@ -16,9 +16,7 @@ import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
 // Import spark
 import org.apache.spark.sql.SparkSession
 
-/**
- * An example for Multilayer Perceptron Classification.
- */
+
 
  // Create the object  MultilayerPerceptronClassifier
 object MultilayerPerceptronClassifierExample {
