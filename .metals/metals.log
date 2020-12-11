@@ -426,3 +426,5 @@ INFO: Unsupported notification method: $/setTraceNotification
 2020.12.10 21:59:25 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
 2020.12.10 22:01:03 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
 2020.12.10 22:01:03 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Practices\Practice_5.scala
+Dec 10, 2020 10:07:30 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
