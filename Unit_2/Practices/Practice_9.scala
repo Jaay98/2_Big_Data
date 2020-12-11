@@ -33,4 +33,4 @@ val predictions = ovrModel.transform(test)
 val evaluator = new MulticlassClassificationEvaluator()
 .setMetricName("accuracy")
 val accuracy = evaluator.evaluate(predictions)
-println(s"Test Error = ${1 - accuracy}")
+println(s"Test Error = ${1 - accuracy}")}
