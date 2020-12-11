@@ -4,3 +4,7 @@
 2020.12.10 22:29:38 WARN  no build tool detected in workspace 'C:\Users\ASUS S510U\OneDrive\Documentos\8vo Semestre\Datos_Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
 2020.12.10 22:29:38 WARN  no build target for: C:\Users\ASUS S510U\OneDrive\Documentos\8vo Semestre\Datos_Masivos\2_Big_Data\Unit_2\Practices\Practice_2.scala
 2020.12.10 22:29:41 INFO  no build target: using presentation compiler with only scala-library
+dic 10, 2020 10:33:25 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTraceNotification
+dic 10, 2020 10:33:31 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTraceNotification
