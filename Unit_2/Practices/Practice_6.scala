@@ -36,13 +36,13 @@ val labelConverter = new IndexToString().setInputCol("prediction").setOutputCol(
 // 8- Label Converter
 val pipeline = new Pipeline().setStages(Array(labelIndexer, featureIndexer, gbt, labelConverter))
 
-// 9- Runs the indexers.
+// 9- Runs the indexers
 val model = pipeline.fit(trainingData)
 
-// 10- Make predictions.
+// 10- Make predictions
 val predictions = model.transform(testData)
 
-// 11- Select example rows to display.
+// 11- Select example rows to display
 //we can visualize the rows
 predictions.select("predictedLabel", "label", "features").show(20)
 

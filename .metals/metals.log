@@ -19,3 +19,76 @@ INFORMACIÓN: Unsupported notification method: $/setTraceNotification
 2020.12.10 22:55:35 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Evaluations\Evaluacion_2.scala
 Dec 10, 2020 10:55:39 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTraceNotification
+Dec 11, 2020 3:20:31 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Dec 11, 2020 3:20:32 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Dec 11, 2020 3:20:34 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+2020.12.11 15:57:25 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Practices\Practice_1.scala
+2020.12.11 16:10:47 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 16:10:47 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 16:10:47 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 16:10:47 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 16:11:08 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Practices\Practice_2.scala
+2020.12.11 16:19:48 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Practices\Practice_3.scala
+2020.12.11 16:25:21 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Practices\Practice_6.scala
+2020.12.11 16:25:25 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 16:25:25 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 16:28:26 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 16:28:35 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Practices\Practice_6.scala
+2020.12.11 16:33:46 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Practices\Practice_7.scala
+2020.12.11 16:42:28 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Practices\Practice_8.scala
+2020.12.11 16:42:31 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 16:47:59 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Practices\Practice_9.scala
+2020.12.11 16:48:23 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Practices\Practice_10.scala
+2020.12.11 17:05:48 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 17:05:48 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 17:05:51 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 17:05:53 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Dec 11, 2020 5:05:53 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Dec 11, 2020 5:05:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: no context found for source-file:///C:/Users/alons/OneDrive/Escritorio/Universidad/Datos%20Masivos/2_Big_Data/Unit_2/Practices/Practice_9.scala,line-10,offset=129
+scala.reflect.internal.FatalError: no context found for source-file:///C:/Users/alons/OneDrive/Escritorio/Universidad/Datos%20Masivos/2_Big_Data/Unit_2/Practices/Practice_9.scala,line-10,offset=129
+	at scala.tools.nsc.interactive.CompilerControl.$anonfun$doLocateContext$1(CompilerControl.scala:100)
+	at scala.tools.nsc.interactive.CompilerControl.doLocateContext(CompilerControl.scala:100)
+	at scala.tools.nsc.interactive.CompilerControl.doLocateContext$(CompilerControl.scala:99)
+	at scala.tools.nsc.interactive.Global.doLocateContext(Global.scala:113)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitionTypedTreeAt(PcDefinitionProvider.scala:102)
+	at scala.meta.internal.pc.PcDefinitionProvider.definition(PcDefinitionProvider.scala:24)
+
+2020.12.11 17:05:53 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 17:05:53 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Dec 11, 2020 5:05:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 348
+2020.12.11 17:05:53 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Practices\Practice_9.scala
+2020.12.11 17:06:47 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 17:06:47 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 17:07:08 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 17:07:10 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 17:07:16 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 17:07:16 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 17:07:16 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 17:07:18 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 17:07:18 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 17:07:18 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Practices\Practice_10.scala
+2020.12.11 17:08:30 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Practices\Practice_10.scala
+2020.12.11 17:08:39 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 17:08:39 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 17:08:39 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Practices\Practice_10.scala
+2020.12.11 17:09:37 WARN  no build tool detected in workspace 'C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Dec 11, 2020 5:09:37 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Dec 11, 2020 5:09:37 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: no context found for source-file:///C:/Users/alons/OneDrive/Escritorio/Universidad/Datos%20Masivos/2_Big_Data/Unit_2/Practices/Practice_9.scala,line-10,offset=114
+scala.reflect.internal.FatalError: no context found for source-file:///C:/Users/alons/OneDrive/Escritorio/Universidad/Datos%20Masivos/2_Big_Data/Unit_2/Practices/Practice_9.scala,line-10,offset=114
+	at scala.tools.nsc.interactive.CompilerControl.$anonfun$doLocateContext$1(CompilerControl.scala:100)
+	at scala.tools.nsc.interactive.CompilerControl.doLocateContext(CompilerControl.scala:100)
+	at scala.tools.nsc.interactive.CompilerControl.doLocateContext$(CompilerControl.scala:99)
+	at scala.tools.nsc.interactive.Global.doLocateContext(Global.scala:113)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitionTypedTreeAt(PcDefinitionProvider.scala:102)
+	at scala.meta.internal.pc.PcDefinitionProvider.definition(PcDefinitionProvider.scala:24)
+
+2020.12.11 17:09:37 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Practices\Practice_9.scala
+2020.12.11 17:10:57 WARN  no build target for: C:\Users\alons\OneDrive\Escritorio\Universidad\Datos Masivos\2_Big_Data\Unit_2\Practices\Practice_10.scala

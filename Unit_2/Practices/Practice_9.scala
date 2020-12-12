@@ -7,15 +7,15 @@ Authors:
 -Big Data
 
 */
-//1. Import libraries and package
+// 1- Import libraries and package
 import org.apache.spark.ml.classification.{LogisticRegression, OneVsRest}
 import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
 import org.apache.spark.sql.SparkSession
-// Define the function  main as parameter 
+// 2- Define the function  main as parameter 
 def main(): Unit = {
-     //Define the object spark=sparksession - MultilayerPerceptronClassifierEvaluator
+// 3- Define the object spark=sparksession - MultilayerPerceptronClassifierEvaluator
    val spark = SparkSession.builder.appName("MulticlassClassificationEvaluator").getOrCreate()
-   ////the data is loaded into the dataframe
+// 4- the data is loaded into the dataframe
 val inputData = spark.read.format("libsvm")load("sample_multiclass_classification_data.txt")
 val Array(train, test) = inputData.randomSplit(Array(0.8, 0.2))
 val classifier = new LogisticRegression()
@@ -36,5 +36,5 @@ val accuracy = evaluator.evaluate(predictions)
 println(s"Test Error = ${1 - accuracy}")}
 
 println(s"Test Error = ${1 - accuracy}")
-}
+
 
