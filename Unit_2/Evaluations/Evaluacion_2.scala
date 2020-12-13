@@ -24,3 +24,39 @@ utilizando solo la documentacion de la librería de Machine Learning  Mllib de S
 
 */
 
+// Import the libraries that we are going to use
+
+import org.apache.spark.ml.classification.MultilayerPerceptronClassifier
+import org.apache.spark.ml.feature.VectorAssembler
+import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
+import org.apache.spark.ml.feature.{VectorAssembler, StringIndexer}
+import org.apache.spark.ml.linalg.Vectors
+
+// 1- Load the dataframe in a variable
+
+val df = spark.read.option("header","true").option("inferSchema","true").csv("C:/Users/alons/OneDrive/Escritorio/Universidad/Datos Masivos/2_Big_Data/Unit_2/Evaluations/Iris.csv")
+
+// 2- Showing the name of the columns
+
+df.show(5) // They  dont have name, we need put others for this ta
+
+// 3- Showing the schema
+
+df.printSchema()
+
+// 4- Showing the first 5 columns
+
+df.columns
+
+// 5- Using the "describe()" metod for know more about the dataframe
+
+df.describe().show()
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+// Clean the data deleting the null fields and adding it to  a new dataframe called "cleanData"
+
+val cleanData = df.na.drop()
+
+// We are going to add a new headers
