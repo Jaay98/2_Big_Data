@@ -34,7 +34,7 @@ import org.apache.spark.ml.linalg.Vectors
 
 // 1- Load the dataframe in a variable
 
-val df = spark.read.option("header","true").option("inferSchema","true").csv("C:/Users/alons/OneDrive/Escritorio/Universidad/Datos Masivos/2_Big_Data/Unit_2/Evaluations/Iris.csv")
+val df = spark.read.option("header","true").option("inferSchema","true").csv("C:/Users/ASUS S510U/OneDrive/Documentos/8vo Semestre/Datos_Masivos/2_Big_Data/Unit_2/Evaluations/Iris.csv")
 
 // 2- Showing the name of the columns
 
@@ -60,3 +60,18 @@ df.describe().show()
 val cleanData = df.na.drop()
 
 // We are going to add a new headers
+val vectorFeatures = (new VectorAssembler().setInputCols(Array("sepal_length","sepal_width",
+"petal_length","petal_width")).setOutputCol("features"))
+//val assembler = new VectorAssembler().setInputCols(Array("sepal_length","sepal_width","petal_length","petal_width")).setOutputCol("features")
+val features = vectorFeatures.transform(cleanData)
+val speciesIndexer = new StringIndexer().setInputCol("species").setOutputCol("label")
+val dataIndexed = speciesIndexer.fit(features).transform(features)
+
+
+val splits = features.randomSplit(Array(0.6, 0.4), seed = 1234L)
+val train = splits(0)
+val test = splits(1)
+
+val layers = Array[Int](4, 5, 4, 3)
+
+val trainer = new MultilayerPerceptronClassifier().setLayers(layers).setBlockSize(128).setSeed(1234L).setMaxIter(100)  
