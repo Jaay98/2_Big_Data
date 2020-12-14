@@ -41,7 +41,7 @@ val df = spark.read.option("header","true").option("inferSchema","true").csv("C:
 
 // 2- Showing the name of the columns
 
-df.show(5) // They  dont have name, we need put others for this ta
+df.show(5) 
 
 // 3- Showing the schema
 
@@ -61,7 +61,7 @@ df.describe().show()
 // Clean the data deleting the null fields and adding it to  a new dataframe called "cleanData"
 
 val cleanData = df.na.drop()
-cleanData.printSchema() // Make sure the info was ok 
+
 
 
 // We are going to add a new headers
