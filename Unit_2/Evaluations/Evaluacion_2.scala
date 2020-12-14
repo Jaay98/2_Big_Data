@@ -86,3 +86,10 @@ val model = trainer.fit(train)
 //Transform the model with transform.(test)
 
 val result = model.transform(test)
+
+val predictionAndLabels = result.select("prediction", "label")
+
+val evaluator = new MulticlassClassificationEvaluator().setMetricName("accuracy")
+
+println(s"Test set accuracy = ${evaluator.evaluate(predictionAndLabels)}")
+
