@@ -18,7 +18,7 @@ utilizando solo la documentacion de la librería de Machine Learning  Mllib de S
     4. Imprime las primeras 5 columnas.
     5. Usa el metodo describe () para aprender mas sobre los datos del  DataFrame.
     6. Haga la transformación pertinente para los datos categoricos los cuales seran nuestras etiquetas a clasificar.
-    7. Construya el modelos de clasificación y explique su arquitectura.
+    7. Construya el modelo de clasificación y explique su arquitectura.
     8. Imprima los resultados del modelo
 
 
@@ -34,7 +34,10 @@ import org.apache.spark.ml.linalg.Vectors
 
 // 1- Load the dataframe in a variable
 
-val df = spark.read.option("header","true").option("inferSchema","true").csv("C:/Users/ASUS S510U/OneDrive/Documentos/8vo Semestre/Datos_Masivos/2_Big_Data/Unit_2/Evaluations/Iris.csv")
+val df = spark.read.option("header","true").option("inferSchema","true").csv("C:/Users/alons/OneDrive/Escritorio/Universidad/Datos Masivos/2_Big_Data/Unit_2/Evaluations")
+
+// YIM's path "C:/Users/ASUS S510U/OneDrive/Documentos/8vo Semestre/Datos_Masivos/2_Big_Data/Unit_2/Evaluations/Iris.csv"
+// ALONSO's path  "C:/Users/alons/OneDrive/Escritorio/Universidad/Datos Masivos/2_Big_Data/Unit_2/Evaluations"
 
 // 2- Showing the name of the columns
 
@@ -58,11 +61,11 @@ df.describe().show()
 // Clean the data deleting the null fields and adding it to  a new dataframe called "cleanData"
 
 val cleanData = df.na.drop()
+cleanData.printSchema() // Make sure the info was ok 
+
 
 // We are going to add a new headers
-val vectorFeatures = (new VectorAssembler().setInputCols(Array("sepal_length","sepal_width",
-"petal_length","petal_width")).setOutputCol("features"))
-//val assembler = new VectorAssembler().setInputCols(Array("sepal_length","sepal_width","petal_length","petal_width")).setOutputCol("features")
+val vectorFeatures = (new VectorAssembler().setInputCols(Array("sepal_length","sepal_width", "petal_length","petal_width")).setOutputCol("features"))
 val features = vectorFeatures.transform(cleanData)
 val speciesIndexer = new StringIndexer().setInputCol("species").setOutputCol("label")
 val dataIndexed = speciesIndexer.fit(features).transform(features)
