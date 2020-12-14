@@ -71,10 +71,18 @@ val speciesIndexer = new StringIndexer().setInputCol("species").setOutputCol("la
 val dataIndexed = speciesIndexer.fit(features).transform(features)
 
 
-val splits = features.randomSplit(Array(0.6, 0.4), seed = 1234L)
+val splits = features.randomSplit(Array(0.7, 0.3), seed = 1234L)
 val train = splits(0)
 val test = splits(1)
 
 val layers = Array[Int](4, 5, 4, 3)
 
 val trainer = new MultilayerPerceptronClassifier().setLayers(layers).setBlockSize(128).setSeed(1234L).setMaxIter(100)  
+
+// We train the model 
+
+val model = trainer.fit(train)
+
+//Transform the model with transform.(test)
+
+val result = model.transform(test)
