@@ -63,7 +63,6 @@ df.describe().show()
 val cleanData = df.na.drop()
 
 
-
 // VectorAssembler is a transformer that combines a given list of columns into a single vector column
 val vectorFeatures = (new VectorAssembler().setInputCols(Array("sepal_length","sepal_width", "petal_length","petal_width")).setOutputCol("features"))
 
@@ -74,7 +73,6 @@ features.show()
 
 //StringIndexer encodes a string column of labels to a column of label indices 
 val speciesIndexer = new StringIndexer().setInputCol("species").setOutputCol("label")
-
 // Fit the indexed species with the features of the vector
 val dataIndexed = speciesIndexer.fit(features).transform(features)
 
@@ -101,11 +99,16 @@ val model = trainer.fit(train)
 
 //Transform the model with transform.(test)
 
+//Run the model and assing to a "result" variable
 val result = model.transform(test)
 
+//Select the prediction colums
 val predictionAndLabels = result.select("prediction", "label")
 
+//Evaluate reliability
 val evaluator = new MulticlassClassificationEvaluator().setMetricName("accuracy")
 
+
+//Show the result
 println(s"Test set accuracy = ${evaluator.evaluate(predictionAndLabels)}")
 
