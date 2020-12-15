@@ -21,7 +21,6 @@ utilizando solo la documentacion de la librería de Machine Learning  Mllib de S
     7. Construya el modelo de clasificación y explique su arquitectura.
     8. Imprima los resultados del modelo
 
-
 */
 
 // Import the libraries that we are going to use
@@ -39,7 +38,7 @@ val df = spark.read.option("header","true").option("inferSchema","true").csv("C:
 // YIM's path "C:/Users/ASUS S510U/OneDrive/Documentos/8vo Semestre/Datos_Masivos/2_Big_Data/Unit_2/Evaluations/Iris.csv"
 // ALONSO's path  "C:/Users/alons/OneDrive/Escritorio/Universidad/Datos Masivos/2_Big_Data/Unit_2/Evaluations/Iris.csv"
 
-// 2- Showing the the dataframe
+// 2- Showing the dataframe
 
 df.show(5) 
 
@@ -61,7 +60,7 @@ df.describe().show()
 // Clean the data deleting the null fields and adding it to  a new dataframe called "cleanData"
 
 val cleanData = df.na.drop()
-
+cleanData.show()
 
 // VectorAssembler is a transformer that combines a given list of columns into a single vector column
 val vectorFeatures = (new VectorAssembler().setInputCols(Array("sepal_length","sepal_width","petal_length","petal_width")).setOutputCol("features"))
@@ -75,6 +74,7 @@ features.show()
 val speciesIndexer = new StringIndexer().setInputCol("species").setOutputCol("label")
 // Fit the indexed species with the features of the vector
 val dataIndexed = speciesIndexer.fit(features).transform(features)
+dataIndexed.show(200)
 
 // Pull apart the training data of the test data
 //0.7 Training
@@ -101,14 +101,16 @@ val model = trainer.fit(train)
 
 //Run the model and assing to a "result" variable
 val result = model.transform(test)
-
+result.show()
 //Select the prediction colums
 val predictionAndLabels = result.select("prediction", "label")
+predictionAndLabels.show()
 
 //Evaluate reliability
 val evaluator = new MulticlassClassificationEvaluator().setMetricName("accuracy")
 
 
 //Show the result
-println(s"Test set accuracy = ${evaluator.evaluate(predictionAndLabels)}")
 
+println(s"Test set accuracy = ${evaluator.evaluate(predictionAndLabels)}")
+x
