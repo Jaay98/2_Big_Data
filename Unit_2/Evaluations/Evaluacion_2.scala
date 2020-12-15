@@ -64,7 +64,7 @@ val cleanData = df.na.drop()
 
 
 // VectorAssembler is a transformer that combines a given list of columns into a single vector column
-val vectorFeatures = (new VectorAssembler().setInputCols(Array("sepal_length","sepal_width", "petal_length","petal_width")).setOutputCol("features"))
+val vectorFeatures = (new VectorAssembler().setInputCols(Array("sepal_length","sepal_width","petal_length","petal_width")).setOutputCol("features"))
 
 //Transform fetures into a dataframe
 val features = vectorFeatures.transform(cleanData)
@@ -79,7 +79,7 @@ val dataIndexed = speciesIndexer.fit(features).transform(features)
 // Pull apart the training data of the test data
 //0.7 Training
 //0.3 Test
-val splits = features.randomSplit(Array(0.7, 0.3), seed = 1234L)
+val splits = dataIndexed.randomSplit(Array(0.7, 0.3), seed = 1234L)
 val train = splits(0)
 val test = splits(1)
 
