@@ -39,7 +39,7 @@ val df = spark.read.option("header","true").option("inferSchema","true").csv("C:
 // YIM's path "C:/Users/ASUS S510U/OneDrive/Documentos/8vo Semestre/Datos_Masivos/2_Big_Data/Unit_2/Evaluations/Iris.csv"
 // ALONSO's path  "C:/Users/alons/OneDrive/Escritorio/Universidad/Datos Masivos/2_Big_Data/Unit_2/Evaluations/Iris.csv"
 
-// 2- Showing the name of the columns
+// 2- Showing the the dataframe
 
 df.show(5) 
 
@@ -47,7 +47,7 @@ df.show(5)
 
 df.printSchema()
 
-// 4- Showing the first 5 columns
+// 4- Showing the  columns
 
 df.columns
 
@@ -55,7 +55,7 @@ df.columns
 
 df.describe().show()
 
-
+ 
 ///////////////////////////////////////////////////////////////////////////////////////
 
 // Clean the data deleting the null fields and adding it to  a new dataframe called "cleanData"
@@ -64,10 +64,18 @@ val cleanData = df.na.drop()
 
 
 
-// We are going to add a new headers
+// VectorAssembler is a transformer that combines a given list of columns into a single vector column
 val vectorFeatures = (new VectorAssembler().setInputCols(Array("sepal_length","sepal_width", "petal_length","petal_width")).setOutputCol("features"))
+
+//Transform fetures into a dataframe
 val features = vectorFeatures.transform(cleanData)
+//Example
+features.show()
+
+//StringIndexer encodes a string column of labels to a column of label indices 
 val speciesIndexer = new StringIndexer().setInputCol("species").setOutputCol("label")
+
+// Fit the indexed species with the features of the vector
 val dataIndexed = speciesIndexer.fit(features).transform(features)
 
 
