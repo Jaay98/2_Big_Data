@@ -38,10 +38,10 @@ val vectorFeatures = (new VectorAssembler().setInputCols(Array("balance","day","
 //Define  9. Use the vectorFeatures object to transform feature_data
 val features = vectorFeatures.transform(indexed)
 
-// 
+// Define featuresLabelwithColumnsRenamed
 val featuresLabel = features.withColumnRenamed("y", "label")
 
-
+//We index the label and features columns
 val dataIndexed = featuresLabel.select("label","features")
 
 
@@ -50,33 +50,26 @@ val featureIndexer = new VectorIndexer().setInputCol("features").setOutputCol("i
 
 
 val Array(trainingData, testData) = dataIndexed.randomSplit(Array(0.7, 0.3))
-
-
+//Define dt in a DecisionTree
 val dt = new DecisionTreeClassifier().setLabelCol("indexedLabel").setFeaturesCol("indexedFeatures")
-
-
 val labelConverter = new IndexToString().setInputCol("prediction").setOutputCol("predictedLabel").setLabels(labelIndexer.labels)
-
+//define pipeline and save everything in pipeline
 val pipeline = new Pipeline().setStages(Array(labelIndexer, featureIndexer, dt, labelConverter))
-
-
+//model trainigData
 val model = pipeline.fit(trainingData)
-
-
+//make a prediction
 val predictions = model.transform(testData)
-
-
 predictions.select("predictedLabel", "label", "features").show(5)
 
 
 val evaluator = new MulticlassClassificationEvaluator().setLabelCol("indexedLabel").setPredictionCol("prediction").setMetricName("accuracy")
-
+//define accuracy and evaluator predictions
 val accuracy = evaluator.evaluate(predictions)
-
+//Print test error
 println(s"Test Error = ${(1.0 - accuracy)}")
 
 val treeModel = model.stages(2).asInstanceOf[DecisionTreeClassificationModel]
-
+//Print Learned classification tree model:
 println(s"Learned classification tree model:\n ${treeModel.toDebugString}")
 
 val mb = 0.000001
