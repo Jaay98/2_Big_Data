@@ -16,16 +16,16 @@ import org.apache.spark.ml.Transformer
 import org.apache.spark.ml.classification.LinearSVC
 import org.apache.spark.ml.classification.LogisticRegression
 
-// We minimize errors
+//Minimize errors
 import org.apache.log4j._
 Logger.getLogger("org").setLevel(Level.ERROR)
 
-// We create a spark session
+//Create a spark session
 val spark = SparkSession.builder().getOrCreate()
 
 //Load  CSV 
 
-val df = spark.read.option("header","true").option("inferSchema","true").option("delimiter",";").format("csv").load("C:/Users/alons/OneDrive/Escritorio/Universidad/Datos Masivos/2_Big_Data/Project/Logistic Regression")
+val df = spark.read.option("header","true").option("inferSchema","true").option("delimiter",";").format("csv").load("C:/Users/alons/OneDrive/Escritorio/Universidad/Datos Masivos/2_Big_Data/Project/Logistic Regression/bank-full.csv")
 
 // Print schema
 df.printSchema()
@@ -38,7 +38,7 @@ df.show()
 val change1 = df.withColumn("y",when(col("y").equalTo("yes"),1).otherwise(col("y")))
 val change2 = change1.withColumn("y",when(col("y").equalTo("no"),2).otherwise(col("y")))
 val newcolumn = change2.withColumn("y",'y.cast("Int"))
-// We display the new column
+//Show the new column
 newcolumn.show()
 
 //Generate the features table
