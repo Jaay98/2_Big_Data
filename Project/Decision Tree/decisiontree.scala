@@ -15,7 +15,7 @@ import org.apache.spark.sql.SparkSession
 import org.apache.spark.ml.feature.StringIndexer 
 import org.apache.spark.ml.feature.VectorAssembler
 
-//Minize errors 
+//Minimize errors 
 import org.apache.log4j._
 Logger.getLogger("org").setLevel(Level.ERROR)
 
@@ -35,13 +35,13 @@ data.printSchema()
 
 //Define vectorFeatures with the values "balance","day","duration","pdays","previous"
 val vectorFeatures = (new VectorAssembler().setInputCols(Array("balance","day","duration","pdays","previous")).setOutputCol("features"))
-//Define  9. Use the vectorFeatures object to transform feature_data
+//Use the vectorFeatures object to transform feature_data
 val features = vectorFeatures.transform(indexed)
 
 // Define featuresLabelwithColumnsRenamed
 val featuresLabel = features.withColumnRenamed("y", "label")
 
-//We index the label and features columns
+//Index the label and features columns
 val dataIndexed = featuresLabel.select("label","features")
 
 
@@ -53,17 +53,17 @@ val Array(trainingData, testData) = dataIndexed.randomSplit(Array(0.7, 0.3))
 //Define dt in a DecisionTree
 val dt = new DecisionTreeClassifier().setLabelCol("indexedLabel").setFeaturesCol("indexedFeatures")
 val labelConverter = new IndexToString().setInputCol("prediction").setOutputCol("predictedLabel").setLabels(labelIndexer.labels)
-//define pipeline and save everything in pipeline
+//Define pipeline and save everything in pipeline
 val pipeline = new Pipeline().setStages(Array(labelIndexer, featureIndexer, dt, labelConverter))
-//model trainigData
+//Model trainigData
 val model = pipeline.fit(trainingData)
-//make a prediction
+//Make a prediction
 val predictions = model.transform(testData)
 predictions.select("predictedLabel", "label", "features").show(5)
 
 
 val evaluator = new MulticlassClassificationEvaluator().setLabelCol("indexedLabel").setPredictionCol("prediction").setMetricName("accuracy")
-//define accuracy and evaluator predictions
+//Define accuracy and evaluator predictions
 val accuracy = evaluator.evaluate(predictions)
 //Print test error
 println(s"Test Error = ${(1.0 - accuracy)}")
